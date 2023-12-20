@@ -1,0 +1,17 @@
+[package]
+name = 'SushiMasterchef'
+version = '0.0.1'
+
+[dependencies]
+AptosFramework = {git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "72421d32d77f1877ded478e96f5b95914de1df91"}
+AptosStdlib = {git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-stdlib/", rev = "72421d32d77f1877ded478e96f5b95914de1df91"}
+
+
+[addresses]
+# masterchef resouce account(generated from origin account)
+sushi_masterchef = "0x5ddc0f6febb14505fd993972e5f53b656bd40ee9cabe4f801c682a0279d2531e"
+# origin account which create resource account
+masterchef_origin = "0x6d7e552e10cfb46d17ace7a7605a624c1734a0d33ee91d3c7bbf8dbdb81341c3"
+#Use multisig address as a msterchef_admin
+msterchef_admin = "0xf5e747e2fa1bcf63e3998b9bd0722c09c4c5e8cb7842a4f8321e39137a029a2f"
+masterchef_upkeep_operator = "0xeb012b30ffac7039d284a221328ae5f99e781ab9eddd03a25638939f99d85985"
